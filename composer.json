@@ -1,17 +1,17 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "upcoders-ir/laravel-shipping",
+    "description": "The Laravel eCommerce Shipping package provides methods for shipping the products",
     "keywords": [
-        ":vendor_name",
+        "upcoders.ir",
         "laravel",
-        ":package_slug"
+        "laravel-shipping"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/upcoders-ir/laravel-shipping",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "upcoders.ir",
+            "email": "info@upcoders.ir",
             "role": "Developer"
         }
     ],
@@ -34,13 +34,13 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories"
+            "Upcoders.ir\\LaravelShipping\\": "src",
+            "Upcoders.ir\\LaravelShipping\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests"
+            "Upcoders.ir\\LaravelShipping\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -54,10 +54,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "Upcoders.ir\\LaravelShipping\\LaravelShippingServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "LaravelShipping": "Upcoders.ir\\LaravelShipping\\Facades\\LaravelShipping"
             }
         }
     },
