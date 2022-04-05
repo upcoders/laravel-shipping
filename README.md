@@ -1,10 +1,10 @@
 
-# The Laravel eCommerce Shipping package provides methods for shipping the products
+# Laravel eCommerce Shipping package
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/upcoders-ir/laravel-shipping.svg?style=flat-square)](https://packagist.org/packages/upcoders-ir/laravel-shipping)
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/upcoders-ir/laravel-shipping/run-tests?label=tests)](https://github.com/upcoders-ir/laravel-shipping/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/upcoders-ir/laravel-shipping/Check%20&%20fix%20styling?label=code%20style)](https://github.com/upcoders-ir/laravel-shipping/actions?query=workflow%3A"Check+%26+fix+styling"+branch%3Amain)
-[![Total Downloads](https://img.shields.io/packagist/dt/upcoders-ir/laravel-shipping.svg?style=flat-square)](https://packagist.org/packages/upcoders-ir/laravel-shipping)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/upcoders/laravel-shipping.svg?style=flat-square)](https://packagist.org/packages/upcoders-ir/laravel-shipping)
+[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/upcoders/laravel-shipping/run-tests?label=tests)](https://github.com/upcoders-ir/laravel-shipping/actions?query=workflow%3Arun-tests+branch%3Amain)
+[![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/upcoders/laravel-shipping/Check%20&%20fix%20styling?label=code%20style)](https://github.com/upcoders-ir/laravel-shipping/actions?query=workflow%3A"Check+%26+fix+styling"+branch%3Amain)
+[![Total Downloads](https://img.shields.io/packagist/dt/upcoders/laravel-shipping.svg?style=flat-square)](https://packagist.org/packages/upcoders-ir/laravel-shipping)
 
 The Laravel eCommerce Shipping package provides shipping options for shopping applications and includes zones, locations within them, and different methods in each zone. 
 ## Support us
