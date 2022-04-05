@@ -1,5 +1,5 @@
 {
-    "name": "upcoders-ir/laravel-shipping",
+    "name": "upcoders/laravel-shipping",
     "description": "The Laravel eCommerce Shipping package provides methods for shipping the products",
     "keywords": [
         "upcoders.ir",
@@ -27,6 +27,7 @@
         "pestphp/pest": "^1.21",
         "pestphp/pest-plugin-laravel": "^1.1",
         "phpstan/extension-installer": "^1.1",
+        "phpstan/phpstan": "^1.5",
         "phpstan/phpstan-deprecation-rules": "^1.0",
         "phpstan/phpstan-phpunit": "^1.0",
         "phpunit/phpunit": "^9.5",
@@ -34,13 +35,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Upcoders.ir\\LaravelShipping\\": "src",
-            "Upcoders.ir\\LaravelShipping\\Database\\Factories\\": "database/factories"
+            "Upcoders\\LaravelShipping\\": "src",
+            "Upcoders\\LaravelShipping\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Upcoders.ir\\LaravelShipping\\Tests\\": "tests"
+            "Upcoders\\LaravelShipping\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -54,10 +55,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Upcoders.ir\\LaravelShipping\\LaravelShippingServiceProvider"
+                "Upcoders\\LaravelShipping\\LaravelShippingServiceProvider"
             ],
             "aliases": {
-                "LaravelShipping": "Upcoders.ir\\LaravelShipping\\Facades\\LaravelShipping"
+                "LaravelShipping": "Upcoders\\LaravelShipping\\Facades\\LaravelShipping"
             }
         }
     },
