@@ -1,6 +1,4 @@
 
-[<img src="https://github-ads.s3.eu-central-1.amazonaws.com/support-ukraine.svg?t=1" />](https://supportukrainenow.org)
-
 # The Laravel eCommerce Shipping package provides methods for shipping the products
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/upcoders-ir/laravel-shipping.svg?style=flat-square)](https://packagist.org/packages/upcoders-ir/laravel-shipping)
@@ -8,22 +6,15 @@
 [![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/upcoders-ir/laravel-shipping/Check%20&%20fix%20styling?label=code%20style)](https://github.com/upcoders-ir/laravel-shipping/actions?query=workflow%3A"Check+%26+fix+styling"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/upcoders-ir/laravel-shipping.svg?style=flat-square)](https://packagist.org/packages/upcoders-ir/laravel-shipping)
 
-This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
-
+The Laravel eCommerce Shipping package provides shipping options for shopping applications and includes zones, locations within them, and different methods in each zone. 
 ## Support us
-
-[<img src="https://github-ads.s3.eu-central-1.amazonaws.com/laravel-shipping.jpg?t=1" width="419px" />](https://spatie.be/github-ad-click/laravel-shipping)
-
-We invest a lot of resources into creating [best in class open source packages](https://spatie.be/open-source). You can support us by [buying one of our paid products](https://spatie.be/open-source/support-us).
-
-We highly appreciate you sending us a postcard from your hometown, mentioning which of our package(s) you are using. You'll find our address on [our contact page](https://spatie.be/about-us). We publish all received postcards on [our virtual postcard wall](https://spatie.be/open-source/postcards).
 
 ## Installation
 
 You can install the package via composer:
 
 ```bash
-composer require upcoders-ir/laravel-shipping
+composer require upcoders/laravel-shipping
 ```
 
 You can publish and run the migrations with:
@@ -36,7 +27,7 @@ php artisan migrate
 You can publish the config file with:
 
 ```bash
-php artisan vendor:publish --tag="laravel-shipping-config"
+php artisan vendor:publish
 ```
 
 This is the contents of the published config file:
@@ -55,8 +46,8 @@ php artisan vendor:publish --tag="laravel-shipping-views"
 ## Usage
 
 ```php
-$laravelShipping = new Upcoders.ir\LaravelShipping();
-echo $laravelShipping->echoPhrase('Hello, Upcoders.ir!');
+$laravelShipping = new Upcoders\LaravelShipping();
+echo $laravelShipping->echoPhrase('Hello, Upcoders-ir!');
 ```
 
 ## Testing
