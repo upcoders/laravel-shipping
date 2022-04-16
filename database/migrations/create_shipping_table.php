@@ -15,6 +15,18 @@ return new class extends Migration
             $table->timestamps();
         });
 
+        Schema::create('shipping_zone_locations_table', function (Blueprint $table) {
+            $table->id();
+            $table->unsignedBigInteger('parent_id')->nullable();
+            $table->foreign('parent_id')->references('id')->on('shipping_zone_locations_table');
+            $table->unsignedBigInteger('zone_id');
+            $table->foreign('zone_id')->references('id')->on('shipping_zones_table');
+            $table->string('location_code');
+            $table->string('location_type');
+            $table->string('location_name');
+            $table->timestamps();
+        });
+
         Schema::create('shipping_zone_methods_table', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('zone_id');
@@ -28,20 +40,6 @@ return new class extends Migration
             $table->tinyInteger('is_enabled')->default(1);
             $table->timestamps();
         });
-
-
-        Schema::create('shipping_zone_locations_table', function (Blueprint $table) {
-            $table->id();
-            $table->unsignedBigInteger('parent_id')->nullable();
-            $table->foreign('parent_id')->references('id')->on('shipping_zone_locations_table');
-            $table->unsignedBigInteger('zone_id');
-            $table->foreign('zone_id')->references('id')->on('shipping_zones_table');
-            $table->string('location_code');
-            $table->string('location_type');
-            $table->string('location_name');
-            $table->timestamps();
-        });
-
     }
 
     /**
