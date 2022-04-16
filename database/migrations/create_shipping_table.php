@@ -31,7 +31,7 @@ return new class extends Migration
             $table->id();
             $table->unsignedBigInteger('zone_id');
             $table->foreign('zone_id')->references('id')->on('shipping_zones_table');
-            $table->unsignedBigInteger('location_id');
+            $table->unsignedBigInteger('location_id')->nullable();;
             $table->foreign('location_id')->references('id')->on('shipping_zone_locations_table');
             $table->string('method_name');
             $table->string('method_type');
