@@ -30,6 +30,8 @@ return new class extends Migration
 
         Schema::create('shipping_zone_locations_table', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('parent')->nullable();
+            $table->foreign('parent')->references('id')->on('shipping_zone_locations_table');
             $table->unsignedBigInteger('zone_id');
             $table->foreign('zone_id')->references('id')->on('shipping_zones_table');
             $table->string('location_code');
