@@ -25,4 +25,9 @@ class Method extends Model
         return $this->belongsTo(Zone::class);
     }
 
+    public function location()
+    {
+        return $this->belongsTo(Location::class);
+    }
+
 }
