@@ -23,4 +23,9 @@ class Location extends Model
     {
         return $this->belongsTo(Zone::class);
     }
+
+    public function parent()
+    {
+        return $this->belongsTo(Location::class, 'parent_id');
+    }
 }
